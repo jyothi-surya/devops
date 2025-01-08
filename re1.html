@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+    <link href="re1.css" rel="stylesheet" />
+  </head>
+  <body>
+    <center>
+      <div class="container">
+        <h1>Registration Form</h1>
+
+        <form id="registrationForm">
+          <div class="grid-container">
+            <div class="grid-container1">
+              <label for="fullName" class="r">Full Name</label><br>
+              <input type="text" id="fullName" name="fullName" style="height:25px" placeholder="Enter your name" required><br>
+              
+              <label for="password" class="r">Password</label><br>
+              <input type="password" id="password" name="password" style="height:25px" placeholder="Enter password" required><br>
+              <label for="email" class="r">Email</label><br>
+              <input type="email" id="email" name="email" style="height:25px" placeholder="Enter email" required><br>
+            </div>
+            
+            <div class="grid-container1">
+              <label for="userName" class="r">User Name</label><br>
+              <input type="text" id="userName" name="userName" style="height:25px" placeholder="Enter user name" required><br>
+              
+              <label for="confirmPassword" class="r">Confirm Password</label><br>
+              <input type="password" id="confirmPassword" name="confirmPassword" style="height:25px" placeholder="Confirm password" required><br>
+              
+              <label for="phone" class="r">Phone Number</label><br>
+              <input type="tel" id="phone" name="phone" style="height:25px" placeholder="Enter your phone number" required>
+            </div>
+          </div>
+          
+          <div class="gen">
+            <label>Gender</label><br>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male" class="radio-class">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female" class="radio-class">Female</label>
+            <input type="radio" id="preferNotToSay" name="gender" value="preferNotToSay">
+            <label for="preferNotToSay" class="radio-class">Prefer not to say</label>
+          </div>
+          
+          <button type="submit" class="btn">Register</button>
+        </form>
+      </div>
+    </center>
+
+    <script src="re1.js"></script>
+  </body>
+</html>
