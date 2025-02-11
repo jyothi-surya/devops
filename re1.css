@@ -1,0 +1,107 @@
+/* General body styling */
+body {
+    background-color: #f9f1f6; /* Softer pink background */
+    display: flex;
+    justify-content: center;  /* Center the content horizontally */
+    align-items: center;      /* Center the content vertically */
+    height: 100vh;            /* Full viewport height */
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Main container */
+  .container {
+    width: 100%;
+    max-width: 600px;
+    border: 3px solid #d363d8; /* Softer magenta border */
+    background-color: #fff;
+    padding: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    border-radius: 15px; /* Rounded corners */
+    text-align: left;
+  }
+  
+  /* Title styling */
+  h1 {
+    color: #d363d8; /* Magenta color for the title */
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  /* Grid container to create a two-column layout */
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 35px;
+    margin-bottom: 20px;
+  }
+  
+  
+  
+  .grid-container1 input:focus {
+    border-color: #d363d8;
+    outline: none;
+  }
+  
+  /* Styling for labels */
+  /* Styling for each grid item (input fields) */
+.grid-container1 input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 10px; /* Add margin at the top */
+    margin-bottom: 20px; /* Add margin at the bottom for more space between inputs */
+    transition: border-color 0.3s ease;
+    
+  }
+  
+  .r {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  /* Gender section */
+  .gen {
+    margin-top: 20px;
+    font-size: 18px;
+  }
+  
+  .radio-class {
+    font-size: 16px;
+    margin-left: 10px;
+    color: #333;
+  }
+  
+  /* Button styling */
+  .btn {
+    width: 100%;
+    padding: 15px;
+    background-color: #d363d8;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+  }
+  
+  .btn:hover {
+    background-color: #9b2fa3; /* Darker magenta on hover */
+  }
+  
+  /* Responsive design for smaller screens */
+  @media (max-width: 768px) {
+    .grid-container {
+      grid-template-columns: 1fr;
+    }
+  
+    .container {
+      padding: 20px;
+    }
+  }
+  
